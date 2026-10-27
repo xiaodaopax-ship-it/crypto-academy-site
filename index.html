@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4338ca">
+  <meta name="description" content="区块链与加密货币学习：课程、题库、闪卡、合约与无常损失计算器">
+  <title>加密学堂</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="加密学堂">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button id="backBtn" class="icon-btn back" type="button" aria-label="返回" hidden>‹</button>
+    <h1 id="title">加密学堂</h1>
+  </header>
+  <main id="view" tabindex="-1"></main>
+  <nav class="tabbar" aria-label="主导航">
+    <a href="#/learn" data-tab="learn"><span aria-hidden="true">📘</span>学习</a>
+    <a href="#/quiz" data-tab="quiz"><span aria-hidden="true">📝</span>题库</a>
+    <a href="#/flash" data-tab="flash"><span aria-hidden="true">🃏</span>闪卡</a>
+    <a href="#/tool" data-tab="tool"><span aria-hidden="true">🧮</span>计算器</a>
+    <a href="#/me" data-tab="me"><span aria-hidden="true">👤</span>我的</a>
+  </nav>
+  <dialog id="termSheet" class="sheet" aria-labelledby="termTitle">
+    <h2 id="termTitle"></h2>
+    <p id="termDef"></p>
+    <p id="termUs" class="us" hidden></p>
+    <button type="button" class="btn primary block" id="termClose">知道了</button>
+  </dialog>
+  <noscript><p style="padding:16px">需要启用 JavaScript 才能使用本应用。</p></noscript>
+  <script src="js/lessons-1.js"></script>
+  <script src="js/lessons-2.js"></script>
+  <script src="js/lessons-easy.js"></script>
+  <script src="js/glossary.js"></script>
+  <script src="js/calc.js"></script>
+  <script src="js/questions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
